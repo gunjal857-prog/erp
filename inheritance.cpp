@@ -4,17 +4,19 @@ using namespace std;
 namespace student {
 
 class gaurav {
-private:
-    string name = "Gaurav";
-    int age = 21;
-
 public:
-    string course = "Full Stack";
+    string name ;
+    int age;
+     string course = "Full Stack";
     int c, cpp, html, css, js;
 
-    gaurav() {
-       
-        cout<<"enter marks for"<<name<<endl<<course<<endl;
+    
+    gaurav(string n = "Gaurav") {
+        name = n;
+        age = 21;
+        course = "Full Stack";
+
+        cout << "Enter marks for " << name << endl << course << endl;
         
         c   = getMarks("C");
         cpp = getMarks("C++");
@@ -79,16 +81,25 @@ public:
 };
 
 class ruchit:public gaurav{
-  private:
-  string name = "ruchit";
-  int age = 22;
+public:
+ruchit():gaurav("ruchit"){
+    
+}
+ 
 };
 
 }
 
+void p(int n){
+    cout<<"Hello "<<n<<endl;
+}
+
+
+
 
 int main() {
     using namespace student;
-     ruchit r1; 
+    //  ruchit r1; 
+     p(12);
     return 0;
 }
