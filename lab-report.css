@@ -1,0 +1,461 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#eef2f7;
+    font-family:sans-serif;
+    overflow-x:hidden;
+}
+
+
+
+
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    background:#111827;
+
+    padding:0px 0px;
+
+    box-shadow:0 2px 10px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   NAVBAR for desktop
+========================= */
+
+.custom-navbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    padding:12px 20px;
+}
+
+.nav-menu{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.nav-menu .nav-link{
+    color:white !important;
+    font-weight:600;
+    padding:8px 12px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.nav-menu .nav-link:hover,
+.nav-menu .nav-link.active{
+    background:#4F46E5;
+    color:white !important;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo{
+    font-size:15px;
+
+    font-weight:bold;
+
+    color:white;
+    margin-left: 20px;
+}
+/* =========================
+   SEARCH AREA for desktop
+========================= */
+.search-area{
+    display:flex;
+    align-items:center;
+    background:white;
+    border-radius:50px;
+    overflow:hidden;
+    width:320px;
+    height:45px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* input */
+
+.search-area input{
+    border:none !important;
+    box-shadow:none !important;
+  width: 180px !important;
+}
+
+/* button */
+
+.search-area button{
+    border:none;
+    width:50px;
+    height:45px;
+    background:#4F46E5;
+    color:white;
+    position: relative;
+    left: 10px;
+    right: 20px;
+    transition:0.3s;
+}
+
+.search-area button:hover{
+    background:#372fcf;
+}
+
+/* select */
+
+.search-select{
+    border:none !important;
+    
+    background:#ffffff00;
+    font-weight:600;
+    cursor:pointer;
+    box-shadow:none !important;
+    width: 50px !important;
+}
+/* ====================================
+---------search area for mobile-------
+==================================== */
+
+.search-area-mobile{
+       display:flex;
+    align-items:center;
+    background:white;
+    border-radius:50px;
+    overflow:hidden;
+    width:320px;
+    height:45px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+.SEARCH-BAR-MOBILE{
+    border:none !important;
+    box-shadow:none !important;
+    padding-left:15px;
+    background-color: rgba(255, 255, 255, 0);
+
+}
+.search-area-mobile button{
+        border:none;
+    width:50px;
+    height:45px;
+    background:#4F46E5;
+    color:white;
+    transition:0.3s;
+
+}
+.search-area-mobile button:hover{
+     background:#372fcf;
+}
+.form-select-mobile{
+     border:none !important;
+    width:60px !important;
+    background:#ffffff00;
+    font-weight:600;
+    cursor:pointer;
+    box-shadow:none !important;
+}
+
+.button-for-mobile-offcanvas-on-of{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 40px;
+    color: white;
+    border-radius: 50px;
+    background-color: #4a90e2;
+    font-display: ;
+    font-size: 20px;
+    transition: 0.2s;
+}
+.button-for-mobile-offcanvas-on-of:hover{
+    background-color: #4F46E5;
+    color: white;
+    transform: scale(1.05);
+}
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.profile img{
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    cursor:pointer;
+}
+
+
+
+
+
+
+/* =============modal button style============= */
+
+.sign-in-buttone{
+    color: rgb(10, 5, 5);
+    
+    background-color: #cadadf;
+    transition: 0.4s ease;
+     border: none;
+     padding: 10px 20px;
+     font-size: 14px;
+      border-radius: 5px;
+}
+.sign-in-buttone:hover{
+    background-color: #13aae6;
+    color: #010b1f;
+    transform: translateY(10px);
+}
+
+
+.modal-content{
+    background-color: rgba(238, 241, 240, 0.5);
+    
+}
+
+/*=======headder in madal style======== */
+.modal-header{
+    
+   
+  color: #b4b4b4;
+    background-color: #000000f6;
+      gap: 10px;
+      padding: 20px 20px;
+     
+      
+}
+
+.register h1{
+    color: rgb(19, 248, 11);
+}
+
+/*=========modal body style======== */
+
+.modal-body{
+  /* display: flex;
+    
+    align-items: center;
+    justify-content: center; */
+    font-size: 16px;
+    background-color: #000000;
+      
+  
+}
+
+
+   
+
+
+
+    /* ===========name section style========   */
+.name{
+   
+    
+    border-radius: 15px;
+     background-color: rgb(253, 253, 255);
+    color: #171a4d;
+    font-weight: bold;
+    width: 100%;
+    height: 50px;
+      
+    }
+
+
+    /* ============email section style========    */
+    .email{
+    
+ border: 2px solid;
+    border-radius: 10px;
+     background-color: rgb(253, 253, 255);
+    color: #171a4d;
+    font-weight: bold;
+    width: 100%;
+    height: 50px;
+      
+    }
+
+    .mail-symbol{
+        font-size: 30px;
+        background-color: rgb(224, 214, 199);
+    }
+    
+
+
+    /* =========create password section style========   */
+    .create-password{
+          
+ border: 2px solid;
+    border-radius: 10px;
+     background-color: rgb(253, 253, 255);
+    color: #171a4d;
+    font-weight: bold;
+    width: 100%;
+    height: 50px;
+    }
+
+
+    /* ==========conform password========   */
+    .password{
+    
+ border: 2px solid;
+    border-radius: 10px;
+     background-color: rgb(253, 253, 255);
+    color: #171a4d;
+    font-weight: bold;
+    width: 100%;
+    height: 50px;
+
+    }
+
+
+  
+
+    /* ============modal footer style========    */
+
+    .modal-footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+background-color: #080808;
+width: 100%;
+    }
+    .modal-footer button{
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: rgb(2, 255, 14);
+    }
+    /* =========mobie pue offcanvas= navbar======== */
+
+
+/* ===== MOBILE OFFCANVAS ===== */
+
+.offcanvas{
+    width:260px !important;
+}
+
+
+
+/* ===== NAV MENU ===== */
+
+.nav-menu-mobile{
+    width:100%;
+    list-style:none;
+    padding:0;
+}
+
+.nav-item-mobile{
+    width:100%;
+    margin-bottom:10px;
+}
+
+.nav-item-mobile .nav-link{
+    display:block;
+    width:100%;
+    padding:12px;
+    border-radius:10px;
+    text-align:center;
+    color:black;
+    font-weight:600;
+    transition:0.3s;
+}
+
+/* active + hover */
+
+.nav-item-mobile .nav-link:hover,
+.nav-item-mobile .nav-link.active{
+    background:#4F46E5;
+    color:white !important;
+}
+
+/* ===== SIGN IN BUTTON ===== */
+
+.sign-in-buttone-mobile{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#4F46E5;
+    color:white;
+    font-weight:bold;
+}
+
+
+
+
+
+
+
+
+
+
+/* ===== PROFILE ===== */
+
+.profile-mobile{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.profile-mobile img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+
+.desktop-navbar{
+    display: block;
+
+}
+
+.mobile-navbar{
+    display: none;
+
+}
+.offcanvas{
+    display: none;
+}
+
+
+@media(max-width:1046px){
+    .mobile-navbar{
+        display: block;
+    }
+    .desktop-navbar{
+        display: none;
+    }
+    .offcanvas{
+        display: block;
+    }
+}
+

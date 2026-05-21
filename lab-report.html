@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab report</title>
+    <link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+ <link rel="stylesheet" href="./lab-report.css">
+</head>
+<body>
+    <!-- ============== HEADER for desktop=========== -->
+
+<header class="header desktop-navbar">
+<nav class=" navbar custom-navbar ">
+<div class="custom-navbar container-fluid">
+
+    
+    
+    <div class="logo">
+            ERP Dashboard
+        </div>
+        <ul class="nav-menu nav-underline mx-auto">
+            
+            <li  class="nav-item"><a class="nav-link " href="new-and-first-erp.html">Home</a></li>
+            <li  class="nav-item"><a class="nav-link active" href="lab-report.html">Lab Report</a></li>
+            <li  class="nav-item"><a class="nav-link" href="#">Packing</a></li>
+            <li  class="nav-item"><a class="nav-link" href="#">Daily Entry</a></li>
+            <li  class="nav-item"><a class="nav-link" href="#">Reports</a></li>
+            <li  class="nav-item"><a class="nav-link" href="#">Masters</a></li>
+            
+            
+        </ul>
+        
+        
+        <!-- Button trigger modal -->
+
+
+        <button type="button" class=" 
+        sign-in-buttone  " 
+        data-bs-toggle="modal" 
+        data-bs-target="#loginform">
+        SIGN IN
+    </button>
+
+    <!-- ========nav search bar======= -->
+    
+    <div class="search-area input-group ">
+        
+         <input type="text" class="form-control " placeholder="search" >
+  <button class="btn" type="button" id="button-addon2">
+ <i class="fa-solid fa-paper-plane" style="color: rgb(20, 10, 10);"></i>
+  </button>
+
+      
+        
+        <select class="form-select search-select">
+ 
+  <option value="1">ajy</option>
+  <option value="2">S.O</option>
+  <option value="3">Lot</option>
+</select>
+    </div>
+        
+    <!-- ==========profile image========= -->
+        <div class="profile">
+            <img src="https://ajytech.in/assets/dist/img/avatar5.png">
+        </div>
+        
+    
+    
+</div>
+</nav>
+
+</header>
+
+<!-- ================= HEADER for mobile ================= -->
+<header class="header mobile-navbar">
+<nav class=" navbar custom-navbar-mobile ">
+<div class="custom-navbar container-fluid">
+
+    
+    
+    <div class="logo">
+            ERP Dashboard
+        </div>
+   
+        
+        <!-- ========serch sre in mobile======= -->
+        <div class="search-area-mobile input-group ">
+            
+             <input type="text" class="form-control SEARCH-BAR-MOBILE " placeholder="search" >
+        <button class="button-for-search" type="button" id="button-addon2">
+        <i class=" icone-for-search fa-solid fa-paper-plane" style="color: rgb(20, 10, 10);"></i>
+        </button>
+        
+          
+            
+            <select class="form-select-mobile search-select">
+        
+        <option value="1">ajy</option>
+        <option value="2">S.O</option>
+        <option value="3">Lot</option>
+        </select>
+    </div>
+
+
+      <button class="btn  button-for-mobile-offcanvas-on-of" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" >
+  meanu
+</button>
+    
+    
+</div>
+</nav>
+
+</header>
+
+
+<!-- ========off canvas section======= -->
+
+
+ 
+
+<div class="offcanvas offcanvas-start" data-bs-backdrop="static"  id="staticBackdrop">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="staticBackdropLabel"> ERP Dashboard</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" ></button>
+  </div>
+  <div class="offcanvas-body">
+
+<div class="custom-navbar-mobile container">
+
+    <ul class="nav-menu-mobile nav-underline mx-auto">
+            
+        <li  class="nav-item-mobile nav-item"><a class="nav-link " href="new-and-first-erp.html">Home</a></li>
+        <li  class="nav-item-mobile nav-item"><a class="nav-link active" href="#">Lab Report</a></li>
+        <li  class="nav-item-mobile nav-item"><a class="nav-link" href="#">Daily Entry</a></li>
+        <li  class="nav-item-mobile nav-item"><a class="nav-link" href="#">Reports</a></li>
+        <li  class="nav-item-mobile nav-item"><a class="nav-link" href="#">Masters</a></li>
+        <li  class="nav-item-mobile nav-item"><a class="nav-link" href="#">Packing</a></li>
+            
+            
+        </ul>
+        
+        
+        <!-- Button trigger modal -->
+
+
+        <button type="button" class=" 
+        sign-in-buttone-mobile  " 
+        data-bs-toggle="modal" 
+        data-bs-target="#loginform">
+        SIGN IN
+    </button>
+
+    
+        
+    <!-- ==========profile image========= -->
+        <div class="profile-mobile">
+            <img src="https://ajytech.in/assets/dist/img/avatar5.png">
+        </div>
+        
+    
+    
+  </div>
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade"
+id="loginform" 
+data-bs-backdrop="static" 
+data-bs-keyboard="false" 
+tabindex="-1" 
+aria-labelledby="staticBackdropLabel"
+aria-hidden="true">
+
+<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    
+    
+    
+    <div class="modal-content">
+        
+        
+        <div class="modal-header">
+            
+            <div class="register text-center mx-auto" >
+                <h1>REGISTER</h1>
+                <h6>singup now and get full access to our app</h6>
+                
+                
+            </div>
+            <button class="btn-close btn-close-white"               data-bs-dismiss="modal"  aria-label="Close"></button>
+            
+        </div> 
+        
+        
+        <!--========== modal body content form-layout============-->
+        
+        <div class="modal-body">
+            
+            <div class="input_tags"> 
+    
+        
+        <!-- ===========name section inside modal body======= -->
+        
+       
+        
+       
+        <input type="text" 
+        class="name text-center"
+       placeholder="NAME">
+        
+      <hr>
+<!-- =========email section inside modal body============ --> 
+        
+
+     <input type="email"
+         class="email text-center"
+          placeholder="EMAIL">
+<hr>
+
+<!-- =====create password section inside modal body=======  -->
+   
+      <input type="password"
+       class="create-password text-center"
+      placeholder="create password">
+<hr>
+
+<!-- =========confirm password section inside modal body=======  --> 
+
+<input type="password" 
+class="password text-center"
+ placeholder="Confirm Password">
+
+ 
+
+    
+    
+</div>       
+</div>
+   
+     <!-- ============modal footer content================== -->
+   
+    <div class="modal-footer">
+   
+     
+   
+        <button type="button" 
+        class="btn "
+        data-bs-dismiss="modal">submit</button>
+   
+    </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
