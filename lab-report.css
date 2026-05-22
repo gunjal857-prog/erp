@@ -458,4 +458,56 @@ width: 100%;
         display: block;
     }
 }
+/* ==============================
+--------table body -----------
+============================== */
+.lab-report-table-head{
+    border: 2px solid;
+    padding: 15px;
+}
+
+.table-headding-titel{
+ 
+    background-color: #2a374a3b;
+}
+.searching-items-in-table-section{
+    display:flex;
+    flex-wrap: wrap;
+    gap:30px;
+    margin-top:8px;
+}
+
+
+.form-control-lab{
+    width:220px;
+    height:34px;
+    padding:6px 12px;
+    border-radius:4px;
+    border:1px solid grey;
+}
+
+/* ---------over view section------- */
+
+.over-view{
+    border: 0px solid rgb(156, 156, 156);
+    box-shadow: 0px 0px 10px grey;
+}
+.over-view th,
+.over-view td{
+    border: 2px solid;
+    color: rgb(82, 82, 82);
+    background-color: white !important;
+}
+.over-view th{
+    background-color: #d9edf7 !important;
+}
+ /* -----data section------ */
+ .data-section{
+    border: 1px solid grey;
+    box-shadow: 0px 0px 10px grey;
+ }
+ .data-section th,
+ .data-section td{
+    border: 1px solid grey;
+ }
 
