@@ -38,6 +38,7 @@ body{
 
 .custom-navbar{
     display:flex;
+    flex-wrap: nowrap;
     align-items:center;
     justify-content:space-between;
     gap:20px;
@@ -123,12 +124,26 @@ body{
 
 .search-select{
     border:none !important;
-    
+    flex-wrap: wrap;
     background:#ffffff00;
-    font-weight:600;
+    font-weight:400;
+    font-size: 20px !important;
     cursor:pointer;
     box-shadow:none !important;
-    width: 50px !important;
+    width: 60px !important;
+}
+.search-select option{
+    font-size: 10px;
+}
+
+
+
+/* ===================================
+--------------navbar for mobile----------
+==================================== */
+.custom-navbar-mobile{
+ display: flex;
+ flex-wrap: nowrap;
 }
 /* ====================================
 ---------search area for mobile-------
@@ -458,10 +473,11 @@ width: 100%;
         display: block;
     }
 }
+
 /* ==============================
 --------table body -----------
 ============================== */
-.lab-report-table-head{
+.table-head{
     border: 2px solid;
     padding: 15px;
 }
@@ -510,7 +526,10 @@ width: 100%;
  .data-section td{
     border: 1px solid grey;
  }
-/* ==============packing requirement============ */
+
+ 
+
+ /* ==============packing requirement============ */
 
  .bill-generate-section{
 
@@ -547,5 +566,3 @@ width: 100%;
     width:23%;
     margin-top: 8px;
 }
-
-
